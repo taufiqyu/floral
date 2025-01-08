@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Floral Peach</title>
+    <link rel="stylesheet" href="css/bulma-no-dark-mode.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="css/default.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  </head>
+  <body>
+  <section id="sampul" class="hero is-fullheight">
+    <div class="hero-body is-flex-direction-column bg-light" style="justify-content:center">
+      <!-- image 300px x 300px -->
+      <img class="animate__animated animate__fadeIn animate__slower" src="asset/svg/logo.svg" alt="jb">
+      <p class="subtitle mb-3">
+        The Wedding of
+      </p>
+      <h2 id="nama1" class="title nama is-2 mt-1 animate__animated animate__fadeInDown animate__slow">
+        Jantan &amp Betina
+      </h2>
+      <p class="subtitle mt-6 mb-0">
+        Kepada Yth:
+      </p>
+      <p id="tamu" class="subtitle is-4 has-text-weight-bold animate__animated animate__fadeInUp animate__slow"></p>
+      <button class="button is-danger is-small is-rounded animate__animated animate__pulse animate__infinite" onclick="buka()">buka undangan</button>
+    </div>
+  </section>
+  <section id="utama" class="p-0 is-hidden">
+  <!-- Audio Element -->
+  <audio id="audio" src="asset/audio/audio.mp3" loop>
+    Your browser does not support the audio element.
+  </audio>
+
+  <!-- Tombol Play/Pause Melayang -->
+  <button id="buttonAudio" onclick="playPauseButton()" class="play-pause-button button is-danger is-small is-rounded animate__animated animate__heartBeat animate__infinite animate__slower">
+    <i id="iconPlay" class="fa-solid fa-pause"></i>
+  </button>
+    <div class="hero is-fullheight animate__animated animate__fadeIn">
+      <div class="hero-body is-flex-direction-column bg-light" style="justify-content:center">
+          <div>
+            <figure class="image m-6 has-outline">
+              <img class="is-rounded" src="https://via.placeholder.com/240x360.jpg" alt="foto mempelai">
+            </figure>
+          </div>
+            <h2 id="nama2" class="title nama is-3 mt-3 gerak" data-animate="animate__fadeInDown">
+              Jantan &amp Betina
+            </h2>
+            <h1 id="tanggalResepsi1" class="subtitle is-6 gerak animate__delay-1s mt-2" data-animate="animate__fadeInUp">
+              Jum'at, 14 Februari 2025
+            </h1>
+            <div id="mycountdown" class="simply-countdown">
+              
+            </div>
+      </div>
+    </div>
+
+<section class="section bg-dark2">
+  <div class="container">
+    <p class="ayat has-text-centered has-text-weight-semibold gerak" data-animate="animate__zoomIn">
+      "Dan di antara tanda-tanda (kebesaran)-Nya ialah Dia menciptakan pasangan-pasangan untukmu dari jenismu sendiri, 
+      agar kamu cenderung dan merasa tenteram kepadanya, dan Dia menjadikan di antaramu rasa kasih dan sayang. 
+      Sesungguhnya pada yang demikian itu benar-benar terdapat tanda-tanda (kebesaran Allah) bagi kaum yang berpikir."
+    </p>
+    <p class="has-text-centered is-italic is-size-6 gerak animate__delay-1s" data-animate="animate__fadeInUp">
+      (QS. Ar-Rum: 21)
+    </p>
+  </div>
+</section>
+
+  <section class="section bg-light2">
+    <div class="container" style="margin-top:90px;margin-bottom:90px">
+      <!-- Salam Pembuka -->
+      <div class="has-text-centered teks-batas">
+        <h1 class="title is-4 gerak" data-animate="animate__fadeInUp">بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيمِ</h1>
+        <p class="mt-4 gerak animate__delay-1s" data-animate="animate__fadeInUp">
+          <b>Assalamu'alaikum Wr. Wb.</b></p>
+        <p class="mt-4 gerak animate__delay-2s" data-animate="animate__fadeInUp">Dengan penuh syukur kepada Allah SWT, kami bermaksud mengundang Bapak/Ibu/Saudara/i untuk hadir dan memberi doa restu pada hari bahagia pernikahan kami.</p>
+      </div>
+
+      <!-- Info Mempelai -->
+      <div class="columns is-variable is-8 mt-6">
+        <!-- Mempelai Pria -->
+        <div class="column is-half has-text-centered">
+          <figure class="image is-inline-block m-4 has-outline">
+            <img class="is-rounded" src="https://via.placeholder.com/200x300.jpg" alt="Mempelai Pria">
+          </figure>
+          <h2 id="namaPa" class="title nama is-3 mt-3 gerak" data-animate="animate__fadeInDown">Rembo Jantan Malaka</h2>
+          <p class="subtitle is-6 gerak animate__delay-1s mt-2" data-animate="animate__fadeInUp">Putra dari Bapak <span id="ayahPa">[Nama Ayah]</span> &amp Ibu <span id="ibuPa">[Nama Ibu]</span></p>
+          <a id="igPa" href="https://www.instagram.com/nama_akun" target="_blank" class="btn-instagram gerak animate__delay-2s" data-animate="animate__zoomIn">
+            <i class="fab fa-instagram"></i> <span id="igPaName">nama_akun</span>
+          </a>
+        </div>
+
+        <!-- Mempelai Wanita -->
+        <div class="column is-half has-text-centered">
+          <figure class="image is-inline-block m-4 has-outline">
+            <img class="is-rounded" src="https://via.placeholder.com/200x300.jpg" alt="Mempelai Wanita">
+          </figure>
+          <h2 id="namaPi" class="title nama is-3 mt-3 gerak" data-animate="animate__fadeInDown">Rose Betina Liar</h2>
+          <p class="subtitle is-6 gerak animate__delay-1s mt-2" data-animate="animate__fadeInUp">Putri dari Bapak <span id="ayahPi">[Nama Ayah]</span> &amp Ibu <span id="ibuPi">[Nama Ibu]</span></p>
+          <a id="igPi" href="https://www.instagram.com/nama_akun" target="_blank" class="btn-instagram gerak animate__delay-2s" data-animate="animate__fadeInUp">
+            <i class="fab fa-instagram"></i> <span id="igPiName">nama_akun</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section class="section bg-dark2 p-1">
+    <div class="container info-card bg-dark2">
+      <!-- Info Akad dan Resepsi -->
+      <div class="columns is-variable is-8 is-centered">
+        <!-- Akad -->
+        <div class="column is-half">
+          <div class="has-text-centered gerak" data-animate="animate__zoomIn">
+            <h2 class="title is-2 mt-2 has-text-light">Akad Nikah</h2>
+            <p id="tanggalAkad">Jum'at, 14 Februari 2025</p>
+            <p id="jamAkad">08.00 WIB</p>
+            <span class="icon is-large has-text-white">
+              <i class="fas fa-map-marked-alt fa-2x"></i>
+            </span>
+            <h4 class="title is-5 mt-2 has-text-light">Lokasi Acara :</h4>
+            <p id="lokasiAkad" class="subtitle is-6 has-text-light">Masjid Al-Hikmah, Jl. Melati No. 10,<br>Jakarta</p>
+            <a href="https://maps.google.com" target="_blank" class="button is-small is-danger-light is-rounded mt-1 mb-6">
+              <span class="icon">
+                <i class="fas fa-map-marker-alt"></i>
+              </span>
+              <span>Lihat Lokasi</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Resepsi -->
+        <div class="column is-half">
+          <div class="has-text-centered gerak" data-animate="animate__zoomIn">
+            <h2 class="title is-2 mt-2 has-text-light">Resepsi</h2>
+            <p id="tanggalResepsi2" class="mb-3">Jum'at, 14 Februari 2025</p>
+            <p id="jamResepsi">11.00 WIB</p>
+            <span class="icon is-large has-text-white">
+              <i class="fas fa-map-marked-alt fa-2x"></i>
+            </span>
+            <h4 class="title is-5 mt-2 has-text-light">Lokasi Acara :</h4>
+            <p id="lokasiResepsi" class="subtitle is-6 has-text-light">Gedung Serba Guna, Jl. Melati No. 15,<br>Jakarta</p>
+            <a href="https://maps.google.com" target="_blank" class="button is-small is-danger-light is-rounded mt-1 mb-6">
+              <span class="icon">
+                <i class="fas fa-map-marker-alt"></i>
+              </span>
+              <span>Lihat Lokasi</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section bg-dark">
+    <div class="container">
+      <div class="live-section has-text-centered gerak" data-animate="animate__slideInUp">
+        <h2 class="title is-3 has-text-white">Live Streaming</h2>
+        <p class="mb-4">Kami juga menyediakan siaran langsung agar Anda dapat menyaksikan momen istimewa kami dari mana saja.</p>
+        <a href="https://www.youtube.com/" target="_blank" class="button is-danger is-small is-rounded">
+          <span class="icon">
+            <i class="fas fa-video"></i>
+          </span>
+          <span>Tonton Live Streaming</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section bg-light2">
+    <div class="container">
+      <h2 class="title has-text-centered is-3">Love Story</h2>
+      <div class="columns is-vcentered">
+        <!-- Foto -->
+        <div class="column is-half gerak" data-animate="animate__fadeInUp">
+          <figure class="image">
+            <img class="love-story-image" src="https://via.placeholder.com/600x400" alt="Love Story">
+          </figure>
+        </div>
+
+        <!-- Timeline Cerita Cinta -->
+        <div class="column is-half">
+          <div class="love-story-timeline">
+            <div class="love-story-timeline-item gerak" data-animate="animate__fadeInUp">
+              <h3 class="subtitle is-5"><b id="judulCerita1">Awal Bertemu</b></h3>
+              <p id="cerita1">Pada suatu hari, mereka bertemu di sebuah acara teman, tanpa sengaja saling mengenal.</p>
+            </div>
+            <div class="love-story-timeline-item gerak animate__delay-1s" data-animate="animate__fadeInUp">
+              <h3 class="subtitle is-5"><b id="judulCerita2">Komitmen</b></h3>
+              <p id="cerita2">Mereka mulai berbicara lebih sering dan membuat komitmen untuk saling mendukung dalam segala hal.</p>
+            </div>
+            <div class="love-story-timeline-item gerak animate__delay-2s" data-animate="animate__fadeInUp">
+              <h3 class="subtitle is-5"><b id="judulCerita3">Bertunangan</b></h3>
+              <p id="cerita3">Setelah beberapa tahun bersama, mereka memutuskan untuk melangkah ke jenjang yang lebih serius dengan bertunangan.</p>
+            </div>
+            <div class="love-story-timeline-item gerak animate__delay-3s" data-animate="animate__fadeInUp">
+              <h3 class="subtitle is-5"><b id="judulCerita4">Hari Pernikahan</b></h3>
+              <p id="cerita4">Dan akhirnya, hari yang dinantikan pun tiba, mereka mengikat janji suci dalam sebuah pernikahan yang penuh kebahagiaan.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section bg-dark">
+    <div class="container">
+      <!-- RSVP Form -->
+<div class="form-section gerak" data-animate="animate__fadeInUp">
+  <h2 class="title is-3 has-text-centered">RSVP</h2>
+  <form id="rsvpForm">
+    <div class="field">
+      <label class="label">Nama</label>
+      <div class="control">
+        <input class="input is-small" type="text" id="nama" placeholder="Nama Anda">
+      </div>
+      <p class="help is-danger error-message" id="namaError"></p>
+    </div>
+
+    <div class="field mt-5">
+      <label class="label">Alamat</label>
+      <div class="control">
+        <input class="input is-small" type="text" id="alamat" placeholder="Alamat Anda">
+      </div>
+      <p class="help is-danger error-message" id="alamatError"></p>
+    </div>
+
+    <div class="field mt-5">
+      <label class="label">Konfirmasi Kehadiran</label>
+      <div class="control">
+        <div class="select is-small">
+          <select id="kehadiran">
+            <option value="">Pilih Kehadiran</option>
+            <option value="Hadir">Hadir</option>
+            <option value="Tidak Hadir">Tidak Hadir</option>
+          </select>
+        </div>
+      </div>
+      <p class="help is-danger error-message" id="kehadiranError"></p>
+    </div>
+
+    <div class="field mt-5">
+      <label class="label">Jumlah Orang</label>
+      <div class="control">
+        <div class="select is-small">
+          <select id="jumlah">
+            <option value="">Pilih Jumlah</option>
+            <option value="1">1 Orang</option>
+            <option value="2">2 Orang</option>
+            <option value="3">3 Orang</option>
+            <option value="4">4 Orang</option>
+            <option value="5">5 Orang</option>
+          </select>
+        </div>
+      </div>
+      <p class="help is-danger error-message" id="jumlahError"></p>
+    </div>
+
+    <div class="button-container mt-5">
+      <button class="button is-danger is-small is-rounded" type="button" id="sendButton" data-nomor="6285645251595">
+        Konfirmasi Kehadiran
+      </button>
+    </div>
+  </form>
+</div>
+
+<!-- Ucapan dan Doa Form -->
+<div class="form-section gerak" data-animate="animate__fadeInUp">
+  <h2 class="title is-3 has-text-centered">Ucapan dan Doa</h2>
+  <form id="ucapanForm">
+    <div class="field">
+      <label class="label">Nama</label>
+      <div class="control">
+        <input class="input is-small" type="text" name="nama_ucapan" placeholder="Nama Anda" required>
+      </div>
+    </div>
+
+    <div class="field">
+      <label class="label">Ucapan dan Doa</label>
+      <div class="control">
+        <textarea class="textarea is-small" name="ucapan_doa" placeholder="Tulis ucapan dan doa untuk mempelai" required></textarea>
+      </div>
+    </div>
+
+    <div class="button-container">
+      <button class="button is-danger is-small is-rounded" type="submit">
+        Kirim Ucapan dan Doa
+      </button>
+    </div>
+  </form>
+</div>
+
+<!-- Tempat Menampilkan Ucapan Setelah Dikirim -->
+<div id="responseMessage"></div>
+    </div>
+  </section>
+  
+<section class="section bg-dark2">
+  <div class="container">
+    <!-- Section Gift -->
+    <div class="gift-section has-text-centered gerak teks-batas" data-animate="animate__slideInUp">
+      <div>
+        <i class="fas fa-gift fa-3x has-text-danger"></i> <!-- Ikon Gift -->
+        
+        <p class="subtitle is-6 mt-4" style="color:white">Apabila berhalangan untuk hadir, namun ingin memberikan hadiah sebagai ucapan selamat dan dukungan, dapat mengirimkan hadiah melalui tautan berikut.</p>
+        <button class="button is-danger is-small is-rounded px-6" id="showGiftModal">
+          Kirim Hadiah
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Modal Gift -->
+<div class="modal animate__animated animate__fadeIn animate__fast" id="giftModal">
+  <div class="modal-background"></div>
+  <div class="modal-card">
+    <header class="modal-card-head has-background-danger">
+      <p class="modal-card-title has-text-white">Kirim Hadiah</p>
+      <button class="delete" aria-label="close" id="closeGiftModal"></button>
+    </header>
+    <section class="modal-card-body bg-dark2">
+      <div class="content">
+        <div class="box has-background-light has-text-centered">
+          <p class="has-text-weight-bold is-size-5 ">Nomor Rekening</p>
+          <p id="accountNumber" class="mt-2" data-account="1234567890">
+            <i class="fas fa-university has-text-danger"></i> 
+            <span id="bankName">Bank BCA</span> - <b id="bankNo">1234567890</b>
+          </p>
+          <p id="atasNama">a.n. Taufiq Yunus</p>
+          <button class="button is-small is-rounded is-danger mt-3 tooltip" id="copyAccount" data-tooltip="Salin">
+            <i class="fas fa-copy"></i>
+            <span class="ml-2">Salin Nomor Rekening</span>
+          </button>
+        </div>
+        <div class="box has-background-light has-text-centered mt-5">
+          <p class="has-text-weight-bold is-size-5">Alamat Pengiriman</p>
+          <p id="shippingAddress" class="mt-2" data-address="Jl. Contoh No. 123, Kota ABC, Provinsi DEF">
+            <i class="fas fa-map-marker-alt has-text-danger"></i> 
+            <span id="alamat">Jl. Contoh No. 123, Kota ABC, Provinsi DEF</span>
+          </p>
+          <button class="button is-small is-rounded is-danger mt-3 tooltip" id="copyAddress" data-tooltip="Salin">
+            <i class="fas fa-copy"></i>
+            <span class="ml-2">Salin Alamat</span>
+          </button>
+        </div>
+      </div>
+    </section>
+    <footer class="modal-card-foot has-background-danger">
+      <a id="konfirmasi" target="_blank" class="button is-small is-rounded px-6">
+        <i class="fab fa-whatsapp"></i>
+        <span class="ml-2">Konfirmasi</span>
+      </a>
+      <button class="button is-small is-rounded px-6" id="closeGiftModalFooter">Tutup</button>
+    </footer>
+  </div>
+</div>
+
+<section class="section closing-section bg-light2">
+  <!-- Galeri Foto -->
+  <div class="slideshow-container">
+    <div class="slideshow">
+<img src="asset/image/1.jpg" alt="Foto Mempelai 1" class="slide active">
+<img src="asset/image/2.jpg" alt="Foto Mempelai 2" class="slide">
+<img src="asset/image/3.jpg" alt="Foto Mempelai 3" class="slide">
+<img src="asset/image/4.jpg" alt="Foto Mempelai 4" class="slide">
+<img src="asset/image/5.jpg" alt="Foto Mempelai 5" class="slide">
+    </div>
+
+    <!-- Teks Penutup -->
+    <div class="closing-content">
+      <div class="container">
+        <p class="subtitle is-6">Terima kasih atas doa dan kehadiran Anda di hari bahagia kami.</p>
+        <p class="subtitle is-6 mt-5">Salam hangat,</p>
+        <p id="nama3" class="title nama is-3 mt-3">Jantan &amp Betina</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="content has-text-centered">
+    <p class="footer-text">
+      © 2025 <b>KoleksiQyu</b>. Dibuat dengan ❤️ untuk hari bahagia Anda.
+    </p>
+    <p>
+      <a href="https://koleksiqyu.site" target="_blank" class="footer-link">Website Kami</a> |
+      <a href="https://wa.me/6285645251595" class="footer-link" target="_blank">Hubungi Kami</a>
+    </p>
+  </div>
+</footer>
+  </section>
+  <script src="js/simplyCountdown.umd.js"></script>
+  <script src="js/controlPanel.js"></script>
+  <script src="js/script.js"></script>
+  </body>
+</html>
