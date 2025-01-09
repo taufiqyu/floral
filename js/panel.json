@@ -1,0 +1,49 @@
+{
+  "general": {
+    "mempelai": "Jantan & Betina",
+    "wa": "6287888811117",
+    "streaming": "https://youtube.com"
+  },
+  "pria": {
+    "nama": "Rembo Jantan Saha",
+    "ayah": "Dalang",
+    "ibu": "Opah",
+    "akunIg": "jantan_ig",
+    "linkIg": "https://instagram.com/jantan_ig"
+  },
+  "wanita": {
+    "nama": "Rose Betina Yuhu",
+    "ayah": "Thomas",
+    "ibu": "Jisso",
+    "akunIg": "rose_ig",
+    "linkIg": "https://instagram.com/rose_ig"
+  },
+  "resepsi": {
+    "tanggal": "Minggu, 17 Agustus 2026",
+    "jam": "10.00 WIB",
+    "lokasi": "Hotel Ahaha, Jl. Kemangi Lalapan No. 9, Lamongan",
+    "peta": "https://google.com"
+  },
+  "akad": {
+    "tanggal": "Senin, 18 Agustus 2026",
+    "jam": "08:00",
+    "lokasi": "Masjid B, Jl. Airlangga No. 21, Lamongan",
+    "pega": "https://maps.example.com"
+  },
+  "gift": {
+    "namaBank": "Bank XYZ",
+    "norek": "123456789",
+    "atasNama": "Rembo Jantan",
+    "alamat": "Jl. Panglima Sudirman No.12, kota Bikini Bottom"
+  },
+  "loveStory": {
+    "judul1": "Awal Bertemu",
+    "judul2": "Komitmen",
+    "judul3": "Melamar",
+    "judul4": "Hari Bahagia",
+    "cerita1": "Pada suatu hari, mereka bertemu di sebuah acara teman, tanpa sengaja saling mengenal.",
+    "cerita2": "Mereka mulai berbicara lebih sering dan membuat komitmen untuk saling mendukung dalam segala hal.",
+    "cerita3": "Setelah beberapa tahun bersama, mereka memutuskan untuk melangkah ke jenjang yang lebih serius dengan bertunangan.",
+    "cerita4": "Dan akhirnya, hari yang dinantikan pun tiba, mereka mengikat janji suci dalam sebuah pernikahan yang penuh kebahagiaan."
+  }
+}
